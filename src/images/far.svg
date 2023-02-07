@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 115" width="463" height="115">
+	<title>far</title>
+	<defs>
+		<image  width="456" height="88" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcgAAABYAgMAAAAM3o+OAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA////AAAAc8aDcQAAAAN0Uk5TAP//RFDWIQAAALVJREFUeJzt1lEOhCAMRdFu0k26ytGIKYWWMhj+7kswAm2Pn4rIUSJBsvuFLkhIyJQ8r4zI8f1CFyQk5LDrvbpXlKfieyAhIVfIs0Tf9UxZr8q/qU8hISFXSCVse38e7dpP9SogISHnyHhYhrQD22m24l6QkJBzZF2sT4/0q+pdP83Og4SEnCNtYT3GklGV7iKscPrrDAkJmZDHxhgOEhLyD1I2xZkPCQmZkk/2kd18SEjIMfkDJV++lVa20HsAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="3" y="8"/>
+</svg>

@@ -1,17 +1,32 @@
+.photoProfile {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin:auto;
+}
+
+
 @media (max-width: 600px) {
+    
     .layerImg {
-        background-size: 200% !important;
-    }  
+        background-size: 300% !important;
+    }
+    .logo {
+        top: -6rem !important;
+    }
 }
 
 @media (min-width: 768px) {
     .layerImg {
-        background-size: 150% !important;
+        background-size: 10% !important;
     }  
 }
 
 @media (min-width: 1024px) {
     .layerImg {
         background-size: 100% !important;
+    }
+    .logo {
+        background-size: 60vh !important;
     }  
 }

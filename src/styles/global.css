@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+.photoProfile {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin:auto;
+  
+}
+.hero {
+    height: 100%;
+    position: relative;
+}
 /* body {
     font-family: monospace;
     font-size: 16px;

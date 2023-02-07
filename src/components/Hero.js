@@ -1,10 +1,10 @@
 import React from "react"
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"
-import logo from '../images/logo.png'
+import logo from '../images/far.svg'
 import level0 from '../images/background-1.png'
-import level1 from '../images/level-1.gif'
-import level2 from '../images/level-2.gif'
-import level3 from '../images/level-3.gif'
+import level1 from '../images/1.svg'
+import level2 from '../images/2.svg'
+import level3 from '../images/3.svg'
 import '../styles/parallax.css'
 
 const Hero = () => {
@@ -20,7 +20,7 @@ return (
                 }}>
             </ParallaxLayer>
             <ParallaxLayer
-                className="layerImg"
+                className="layerImg bg"
                 offset={0} 
                 speed={0.3}
                 style={{
@@ -53,20 +53,21 @@ return (
             offset={0.9}
             speed={1}
             style={{
-                marginTop: '2rem',
-                height: '100%',
+                marginTop: '5.5rem',
+                height: '50vh',
                 backgroundColor: '#1C050F',
                 padding: '1rem',
                 color: '#fff'
             }}>
+                
             </ParallaxLayer>
             <ParallaxLayer
-                
+                className="logo"
                 offset={0} 
                 speed={2}
                 style={{
                     backgroundImage: `url(${logo})`,
-                    backgroundSize: '34vh',
+                    backgroundSize: '37vh',
                     backgroundPosition: 'center',
                 }}>
             </ParallaxLayer>
