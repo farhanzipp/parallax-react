@@ -1,0 +1,19 @@
+.layerImg {
+    background-size: 250% !important;
+}
+.logo {
+    top: -5rem !important;
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    .layerImg {
+        background-size: 100% !important;
+    }
+    .logo {
+        background-size: 45vh !important;
+    }  
+}

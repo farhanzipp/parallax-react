@@ -5,12 +5,11 @@ import level0 from '../images/background-1.png'
 import level1 from '../images/1.svg'
 import level2 from '../images/2.svg'
 import level3 from '../images/3.svg'
-import '../styles/parallax.css'
+import '../styles/hero.css'
 
 const Hero = () => {
 return (
-        <Parallax pages={1.5} style={{height: '100vh'}}>
-            
+        <Parallax pages={1.2} style={{}}>
             <ParallaxLayer
                 offset={0} 
                 speed={0}
@@ -53,25 +52,22 @@ return (
             offset={0.9}
             speed={1}
             style={{
-                marginTop: '5.5rem',
-                height: '50vh',
+                height: '100%',
                 backgroundColor: '#1C050F',
-                padding: '1rem',
-                color: '#fff'
+                marginTop: '5.6rem'
             }}>
                 
             </ParallaxLayer>
             <ParallaxLayer
                 className="logo"
                 offset={0} 
-                speed={2}
+                speed={2.5}
                 style={{
                     backgroundImage: `url(${logo})`,
                     backgroundSize: '37vh',
                     backgroundPosition: 'center',
                 }}>
             </ParallaxLayer>
-            
         </Parallax>
     )
 }
