@@ -54,7 +54,7 @@ return (
             style={{
                 height: '100%',
                 backgroundColor: '#1C050F',
-                marginTop: '5.6rem'
+                marginTop: '5.2rem'
             }}>
                 
             </ParallaxLayer>

@@ -5,14 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.photoProfile {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin:auto;
-  
+.body {
+    scroll-behavior: smooth;
+    font-family: 'VT323', monospace;
 }
+
 .hero {
     height: 100%;
     position: relative;

@@ -1,13 +1,62 @@
 .profile-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+    padding: 1rem;
     height: 100vh;
-    background-color: #1C050C;
+    background-color: #1C050F;
     color: white;
     position: relative;
-    top: calc(100vh - 1px);
-
+    top: calc(100vh);
+    font-family: 'VT323', monospace;
+    
 }
-
-/*  */
+.profile-header {
+    font-size: 3rem;
+}
+.profile-img {
+    border: 3px solid gold;
+    margin: 0 auto;
+    min-height: 280px;
+    background-color: darkgreen;
+    background-image: url(../images/mine.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+.status, .skill {
+    border: 3px solid gold;
+    padding: 1rem;
+}
+h2 {
+    font-size: 2.5rem;
+    color: gold;
+    border-bottom: 3px solid gold;
+    margin-bottom: 1rem;
+}
+.status li {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+#indo {
+    height: 1.5rem;
+    width: 2.5rem;
+    background: linear-gradient(180deg, red 50%, white 50%);
+    display: inline-block;
+    align-self: center;
+}
+.skill {
+    background-color: blueviolet;
+}
+.skill-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+}
+.skill-box {
+    height: 100px;
+    width: 100px;
+    border: 3px solid cyan;
+    background-color: gold;
+}
