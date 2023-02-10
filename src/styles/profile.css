@@ -51,12 +51,11 @@ h2 {
 .skill-boxes {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    
     
 }
 .skill-box {
     height: 100px;
     width: 100px;
-    border: 3px solid cyan;
-    background-color: gold;
+    padding: 10px;
 }
