@@ -3,7 +3,8 @@ import '../styles/profile.css'
 import CSS from '../images/css-3.png'
 import HTML from '../images/html-5.png'
 import JS from '../images/js.png'
-import ReactImg from '../images/react.png'
+import BS from '../images/bootstrap.png'
+import RE from '../images/react.png'
 
 const Profile = () => {
   return (
@@ -36,19 +37,21 @@ const Profile = () => {
         <div className='skill'>
             <h2>SKILLS</h2>
             <div className='skill-boxes'>
-                <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons" target='_blank'>
+                <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons" target='_blank' style={{background: `radial-gradient(ellipse farthest-corner 60px at 50px 50px,#FFFFFF 50%,transparent 51%)`}}>
                     <img className='skill-box' src={HTML} alt='HTML 5 icons created by Freepik - Flaticon'/>
                 </a>
-                <a href="https://www.flaticon.com/free-icons/css-3" title="css 3 icons" target='_blank'>
+                <a href="https://www.flaticon.com/free-icons/css" title="css 3 icons" target='_blank'>
                     <img className='skill-box' src={CSS} alt='CSS icons created by Freepik - Flaticon'/>
                 </a>
                 <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons" target='_blank'>
                     <img className='skill-box' src={JS} alt='Javascript icons created by Freepik - Flaticon'/>
                 </a>
-                <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons" target='_blank'>
-                    <img className='skill-box' src={JS} alt='Javascript icons created by Freepik - Flaticon'/>
+                <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons" target='_blank'>
+                    <img className='skill-box' src={BS} alt='Bootstrap icons created by Freepik - Flaticon' style={{background: `radial-gradient(ellipse farthest-corner 60px at 50px 50px,#FFFFFF 50%,transparent 51%)`}}/>
                 </a>    
-                
+                <a href="https://www.iconfinder.com/icons/1174949/js_react_js_logo_react_react_native_icon" title="react icons" target='_blank'>
+                    <img className='skill-box' src={RE} alt=' React logo'/>
+                </a>    
             </div>
         </div>
     </div>
