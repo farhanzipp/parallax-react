@@ -9,7 +9,7 @@ import '../styles/hero.css'
 
 const Hero = () => {
 return (
-        <Parallax pages={1.2} style={{}}>
+        <>
             <ParallaxLayer
                 offset={0} 
                 speed={0}
@@ -49,16 +49,6 @@ return (
                     
             </ParallaxLayer>
             <ParallaxLayer
-            offset={0.9}
-            speed={1}
-            style={{
-                height: '100%',
-                backgroundColor: '#1C050F',
-                marginTop: '5.2rem'
-            }}>
-                
-            </ParallaxLayer>
-            <ParallaxLayer
                 className="logo"
                 offset={0} 
                 speed={2.5}
@@ -68,7 +58,8 @@ return (
                     backgroundPosition: 'center',
                 }}>
             </ParallaxLayer>
-        </Parallax>
+            
+        </>
     )
 }
 

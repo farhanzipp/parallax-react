@@ -9,9 +9,11 @@ import RE from '../images/react.png'
 const Profile = () => {
   return (
     <div className='profile-container'>
+        <div className='divider'></div>
         <h1 className='profile-header'>PROFILE</h1>
-        <div className='profile-img'></div>
+        
         <div className='status'>
+        <div className='profile-img'></div>
         <h2>STATS</h2>
             <ul>
                 <li>
