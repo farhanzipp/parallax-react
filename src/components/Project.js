@@ -4,11 +4,12 @@ import '../styles/project.css'
 
 const Project = () => {
   const { carouselFragment } = useSpringCarousel({
+    withLoop: true,
     items: [
       {
         id: 'item-1',
         renderItem: (
-          <div>Item 1</div>
+          <div className='project-box'>Item 1</div>
         )
       },
       {
@@ -22,11 +23,12 @@ const Project = () => {
 
   return (
     <div className='project-container'>
-      <h1 className='profile-header'>PROJECTS</h1>
-        <div>
-          {carouselFragment}
-        </div>
+      <h1>PROJECTS</h1>
+      
+      {carouselFragment} 
+      
     </div>
+
   )
 }
 

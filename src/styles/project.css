@@ -1,5 +1,12 @@
 .project-container {
-    height: 20vh;
     background-color: green;
     font-family: 'VT323', monospace;  
+}
+
+.project-box {
+    width: 100%;
+    height: 50vh;
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid gold;
 }
