@@ -12,10 +12,9 @@ const ParallaxLayout = () => {
       <ParallaxLayer offset={0.9} speed={1}>
         <Profile />
         <Project />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2}>
         
       </ParallaxLayer>
+      
       
     </Parallax>
   )

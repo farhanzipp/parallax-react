@@ -1,6 +1,12 @@
 .project-container {
-    background-color: green;
-    font-family: 'VT323', monospace;  
+    background-color: pink;
+    font-family: 'VT323', monospace;
+    border: 1px solid rgb(54, 36, 211);  
+    padding: 1rem;
+}
+
+.project-header {
+    font-size: 3rem;
 }
 
 .project-box {
@@ -8,5 +14,36 @@
     height: 50vh;
     margin: 1rem;
     text-align: center;
-    border: 2px solid gold;
+    border: 2px solid green;
+}
+
+.slide-wrapper  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 50%;
+    left: 0px;
+    z-index: 99;
+}
+
+.btn-slide {
+    width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3ms;
+    background-color: transparent;
+}
+.left {
+    border-right: 30px solid #00E692;
+}
+.right {
+    border-left: 30px solid #00E692;
+}
+.btn-slide:hover {
+    
+    opacity: 1;
 }
