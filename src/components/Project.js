@@ -51,18 +51,19 @@ const Project = () => {
 
   return (
     <div className='project-container'>
+      <div className='divider'></div>
       <h1 className='project-header'>PROJECTS</h1>
-      
+      <h3>Projects I did</h3>
       <div className='carousel-wrapper'>
-      <div className='slide-wrapper'>
+        <div className='slide-wrapper'>
           <button onClick={slideToPrevItem} className="btn-slide left"></button>
           <button onClick={slideToNextItem} className="btn-slide right"></button>
         </div>
         {carouselFragment}
-        
-
       </div>
-      
+      <div className='visit'>
+        <button className='btn-visit'>visit</button>
+      </div>
     </div>
 
   )

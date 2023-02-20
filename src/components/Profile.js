@@ -37,7 +37,7 @@ const Profile = () => {
             </ul>
         </div>
         <div className='skill'>
-            <h2>SKILLS</h2>
+            <h2>TECH USED</h2>
             <div className='skill-boxes'>
                 <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons" target='_blank' style={{background: `radial-gradient(ellipse farthest-corner 60px at 50px 50px,#FFFFFF 50%,transparent 51%)`}}>
                     <img className='skill-box' src={HTML} alt='HTML 5 icons created by Freepik - Flaticon'/>
