@@ -1,53 +1,37 @@
 import React from 'react'
-import { useSpringCarousel } from 'react-spring-carousel'
+import { useState } from 'react'
+import { useSpringCarousel, useTransitionCarousel } from 'react-spring-carousel'
 import '../styles/project.css'
+import projectArr from './projectsArray'
 
 const Project = () => {
+  const [activeItem, setActiveItem] = useState(1)
   const { 
     carouselFragment,
+    useListenToCustomEvent,
     slideToPrevItem, 
     slideToNextItem 
    } = useSpringCarousel({
     withLoop: true,
-    items: [
-      {
-        id: 'item-1',
-        renderItem: (
-          <div className='project-box'>
-            <h2>ANIQUOTE</h2>
-            <a href="www.google.com">
-              <img src="" alt="portofolio 1" />
-            </a>
-            <p>This project using API for generate random quote</p>
-          </div>
-        )
-      },
-      {
-        id: 'item-2',
-        renderItem: (
-          <div className='project-box'>
-            <h2>KOTAKODE CLONE</h2>
-            <a href="www.google.com">
-              <img src="" alt="portofolio 2 " />
-            </a>
-            <p>Landing Page for kotakode using bootstrap and react</p>
-          </div>
-        )
-      },
-      {
-        id: 'item-3',
-        renderItem: (
-          <div className='project-box'>
-            <h2>RANDOM PORTO</h2>
-            <a href="www.google.com">
-              <img src="" alt="portofolio 3" />
-            </a>
-            <p>Random portofolio Lorem ipsum dolor sit amet consectetur.</p>
-          </div>
-        )
-      },
-    ]
-  })
+    items: projectArr.map((i) => ({
+      id: i.id,
+      renderItem: (
+        <div className='project-box'>
+           <h2>{i.title}</h2>
+           <a href="{i.link}" target="_blank">
+             <img src="" alt={i.altImg} />
+           </a>
+           <p>{i.info}</p>
+        </div>
+      ),
+    }))
+  });
+
+  useListenToCustomEvent((event) => {
+    if (event.eventName === "onSlideStartChange") {
+      setActiveItem(event.nextItem.id)
+    } 
+  });
 
   return (
     <div className='project-container'>
@@ -55,14 +39,16 @@ const Project = () => {
       <h1 className='project-header'>PROJECTS</h1>
       <h3>Projects I did</h3>
       <div className='carousel-wrapper'>
-        <div className='slide-wrapper'>
-          <button onClick={slideToPrevItem} className="btn-slide left"></button>
-          <button onClick={slideToNextItem} className="btn-slide right"></button>
-        </div>
         {carouselFragment}
       </div>
+      <div className='slide-wrapper'>
+          <button onClick={slideToPrevItem} className="btn-slide left"></button>
+          <button className='btn-visit'>{projectArr[activeItem].info}</button>
+          <div>{activeItem + 1} / {projectArr.length}</div>
+          <button onClick={slideToNextItem} className="btn-slide right"></button>
+        </div>
       <div className='visit'>
-        <button className='btn-visit'>visit</button>
+        <p></p>
       </div>
     </div>
 
