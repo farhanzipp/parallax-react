@@ -1,5 +1,5 @@
 import React from "react"
-import { Parallax, ParallaxLayer } from "@react-spring/parallax"
+import {Parallax,ParallaxLayer } from "@react-spring/parallax"
 import logo from '../images/far.svg'
 import level0 from '../images/background-1.png'
 import level1 from '../images/1.svg'
@@ -9,9 +9,10 @@ import '../styles/hero.css'
 
 const Hero = () => {
 return (
-        <>
+        <Parallax pages={1.3}>  
             <ParallaxLayer
-                offset={0} 
+                offset={0}
+                factor={0.9} 
                 speed={0}
                 style={{
                     backgroundImage: `url(${level0})`,
@@ -19,7 +20,7 @@ return (
                 }}>
             </ParallaxLayer>
             <ParallaxLayer
-                className="layerImg bg"
+                className="layerImg"
                 offset={0} 
                 speed={0.3}
                 style={{
@@ -39,14 +40,15 @@ return (
             </ParallaxLayer>
             <ParallaxLayer
                 className="layerImg"
+                factor={1.4}
                 offset={0} 
                 speed={1}
                 style={{
                     backgroundImage: `url(${level3})`,
                     backgroundSize: '200%',
-                    backgroundPosition: 'left bottom'
+                    backgroundPosition: '0% 55%',
                 }}>
-                    
+                   <div className="divider-soil"></div>
             </ParallaxLayer>
             <ParallaxLayer
                 className="logo"
@@ -58,8 +60,7 @@ return (
                     backgroundPosition: 'center',
                 }}>
             </ParallaxLayer>
-            
-        </>
+        </Parallax>
     )
 }
 

@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { useSpringCarousel, useTransitionCarousel } from 'react-spring-carousel'
 import '../styles/project.css'
 import projectArr from './projectsArray'
+import {BiLinkExternal} from 'react-icons/bi'
+import {FiGithub} from 'react-icons/fi'
 
 const Project = () => {
   const [activeItem, setActiveItem] = useState(1)
@@ -33,10 +35,8 @@ const Project = () => {
 
   return (
     <div className='project-container'>
-      <div className='divider'></div>
       <h1 className='project-header'>PROJECTS</h1>
-      <h3>Some Cool Stuff I did</h3>
-      
+      <h3>Some Cool Stuff I've built</h3>
       <div className='carousel-wrapper'>
         <div className='project-title'>{projectArr[activeItem].title}</div>
         <div className='slide-counter'><span>{activeItem + 1} / {projectArr.length}</span></div>
@@ -45,7 +45,9 @@ const Project = () => {
       </div>
       <div className='slide-wrapper'>
           <button onClick={slideToPrevItem} className="btn-slide left"></button>
-          <button className='btn-visit'>Visit</button>
+          <a href='#' className='btn-visit' title='visit my project'><BiLinkExternal /></a>
+          <a href='#myProfile' className='btn-visit'> <FiGithub /></a>
+          
           <button onClick={slideToNextItem} className="btn-slide right"></button>
         </div>
     </div>

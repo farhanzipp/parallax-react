@@ -1,11 +1,17 @@
 import * as React from "react"
-import ParallaxLayout from "../components/ParallaxLayout"
+import Hero from "../components/Hero"
+import Profile from "../components/Profile"
+import Project from "../components/Project"
 import '../styles/global.css'
 
 export default function Home() {
   return (
     <>
-      <ParallaxLayout />
+      <Hero />
+      <div className="homepage">
+        <Profile />
+        <Project />
+      </div>
     </>  
   )
   
