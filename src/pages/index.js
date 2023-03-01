@@ -8,10 +8,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="homepage">
-        <Profile />
-        <Project />
-      </div>
+      <Profile />
+      <Project />
     </>  
   )
   

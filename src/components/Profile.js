@@ -8,7 +8,6 @@ const Profile = () => {
     <div className='profile-container' id='myProfile'>
         <div className='divider'></div>
         <h1 className='profile-header'>PROFILE</h1>
-        
         <div className='status'>
         <div className='profile-img'></div>
         <h2>STATS</h2>
