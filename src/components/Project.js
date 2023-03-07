@@ -29,13 +29,17 @@ const ProjectCarousel = () => {
   const listProjects = projectArr.map((project, index) => (
     <Slide index={index} key={index}>
       <div className="project-card" >
-      <img key={project.id} src={project.src} alt={project.alt} />
+        <img key={project.id} src={project.src} alt={project.alt} />
       </div>
     </Slide>
   ));
 
   const listDot = projectArr.map((item,index) => (
     <Dot slide={item.id} key={index} className="dot"></Dot>
+  ));
+  
+  const listTag = projectArr[currentSlide].tag.map((tags, index) => (
+    <div key={index} className="tag-item">{tags}</div>
   ));
 
   return (
@@ -52,7 +56,7 @@ const ProjectCarousel = () => {
 
       <div className="slide-wrapper">
         <ButtonBack className="btn-slide left"></ButtonBack>
-        <a href="#" className="btn-visit" title="visit my project">
+        <a href={projectArr[currentSlide].link} target="_blank"  rel="noreferrer" className="btn-visit" title="visit my project">
           <BiLinkExternal />
         </a>
         <a href="#myProfile" className="btn-visit">
@@ -62,6 +66,9 @@ const ProjectCarousel = () => {
       </div>
         <div className="project-description">
           <p id="slide-index">{projectArr[currentSlide].info}</p>
+          <div className="tag-wrapper">
+            {listTag}
+          </div>
         </div>
       </div>
   );

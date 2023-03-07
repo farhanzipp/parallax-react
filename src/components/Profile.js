@@ -18,22 +18,27 @@ const Profile = () => {
                 </li>
                 <li>
                     <p>Role:</p>
-                    <p> Front End Developer</p>
+                    <p> Front End Dev, Designer</p>
                 </li>
                 <li>
                     <p>Flag:</p> 
-                    <a href='' title='INDONESIA'>
-                        <span id='indo'></span>
-                    </a>
+                    <span id='indo' title='INDONESIA'></span>
                 </li>
                 <li>
                     <p>Desc:</p>
-                    <p>Farhan is person, Who passionate in design and web development</p>
+                    <p>Farhan is person, Who passionate in design and web development, 
+                        sometimes gardening sometimes cooking.
+                    </p>
+                </li>
+                <li>
+                    <p>Info:</p>
+                    <p>Happy Eid Mubarak !
+                    </p>
                 </li>
             </ul>
         </div>
         <div className='skill'>
-            <h2>TECH USED</h2>
+            <h2>TECH I USE</h2>
             <div className='skill-boxes'>
                 <FaHtml5 />
                 <FaCss3Alt />
