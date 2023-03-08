@@ -1,21 +1,48 @@
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: gold;
+    border-bottom: 3px solid gold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding: 1rem;
+}
+
+li {
+    display: flex;
+    gap: 0.7rem;
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+.nes-container.is-dark {
+    background-color: #1C050F;
+    position:static;
+}
+
+.nes-container.is-dark.with-title > .title {
+    background-color: #1C050F;
+}
+
 .profile-container {
     width: 100%;
     height: 100%;
-    padding: 1rem;
-    background-color: #1C050F;
-    color: white;
+    padding-bottom: 1rem;
     font-family: 'VT323', monospace;
-    border: 1px solid red;
+    background-color: #1C050F;
 }
 .divider {
     height: 80vh;
 }
-.profile-header {
-    font-size: 2.5rem;
-}
+
 .profile-img {
-    border: 3px solid gold;
-    margin: 0 auto;
     min-height: 250px;
     background-color: transparent;
     background-image: url(../images/mine.png);
@@ -23,32 +50,14 @@
     background-size: 60%;
     background-position: bottom;
 }
-.status, .skill {
-    border: 3px solid gold;
-    padding: .7rem;
-}
-h2 {
-    font-size: 2rem;
-    color: gold;
-    border-bottom: 3px solid gold;
-    margin-bottom: 1rem;
-}
-.status li {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-    margin-bottom: 0.2rem;
-    font-size: 1.7rem;
-}
+
 #indo {
     height: 1.2rem;
     width: 2rem;
     background: linear-gradient(180deg, red 50%, white 50%);
     display: inline-block;
 }
-.skill {
-    background-color: royalblue;
-}
+
 .skill-boxes {
     display: flex;
     font-size: 2.5rem;

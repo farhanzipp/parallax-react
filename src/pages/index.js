@@ -1,4 +1,5 @@
 import * as React from "react"
+import Contact from "../components/Contact"
 import Hero from "../components/Hero"
 import Profile from "../components/Profile"
 import Project from "../components/Project"
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Profile />
       <Project />
+      <Contact />
     </>  
   )
   

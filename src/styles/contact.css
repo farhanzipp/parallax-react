@@ -1,0 +1,18 @@
+.contact-container {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'VT323', monospace; 
+    padding: 1rem;
+    padding-top: 3rem;
+    text-align: center;
+}
+.contact-header {
+    font-size: 3rem;
+    color: black;
+}
+
+.social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
