@@ -73,6 +73,9 @@ const ProjectCarousel = () => {
               {listTag}
             </div>
           </div>
+        </div>
+        <div className="more-projects">
+          <a className="nes-btn is-primary">More Projects</a>
         </div>  
       </div>
   );
@@ -87,6 +90,7 @@ const Project = () => {
       infinite={true}
     >
       <ProjectCarousel />
+      
     </CarouselProvider>
   );
 };

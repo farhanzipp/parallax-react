@@ -48,7 +48,7 @@ return (
                     backgroundSize: '200%',
                     backgroundPosition: '0% 55%',
                 }}>
-                   <div className="divider-soil"></div>
+                <div className="divider-soil"></div>
             </ParallaxLayer>
             <ParallaxLayer
                 className="logo"

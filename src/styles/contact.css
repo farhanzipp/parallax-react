@@ -2,8 +2,7 @@
     width: 100%;
     background-color: #fff;
     font-family: 'VT323', monospace; 
-    padding: 1rem;
-    padding-top: 3rem;
+    padding: 3rem 1rem;
     text-align: center;
 }
 .contact-header {
@@ -15,4 +14,5 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-size: 2.5rem;
 }

@@ -1,18 +1,20 @@
 import React from 'react'
 import '../styles/contact.css'
+import {AiFillGithub, AiFillInstagram, AiFillMail, AiFillLinkedin, AiFillCodepenCircle} from 'react-icons/ai'
 
 const Contact = () => {
   return (
     <div className='contact-container'>
-        <h1 className="contact-header">Get In Touch</h1>
-        <h3>Here some ways to reach me!</h3>
+      <div className='nes-balloon from-left'>
+        <h1 className="contact-header">Say Hi!</h1>
         <div className='social-wrapper'>
-          <i className='nes-icon github is-medium'></i>
-          <i className='nes-icon instagram is-medium'></i>
-          <i className='nes-icon twitter is-medium'></i>
-          <i className='nes-icon linkedin is-medium'></i>
-          <i className='nes-icon gmail is-medium'></i>
+          <AiFillGithub />
+          <AiFillInstagram />
+          <AiFillMail />
+          <AiFillLinkedin />
+          <AiFillCodepenCircle />
         </div>
+      </div>
     </div>
   )
 }

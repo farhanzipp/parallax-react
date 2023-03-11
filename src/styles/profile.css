@@ -43,11 +43,10 @@ li {
 }
 
 .profile-img {
-    min-height: 250px;
-    background-color: transparent;
+    min-height: 300px;
     background-image: url(../images/mine.png);
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 50%;
     background-position: bottom;
 }
 

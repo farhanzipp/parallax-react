@@ -130,3 +130,11 @@
     background-color: #333;
     border-radius: 5px;
 }
+
+.more-projects {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+}
