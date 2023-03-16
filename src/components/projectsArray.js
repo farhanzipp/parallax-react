@@ -5,8 +5,8 @@ const projectArr = [
    link : "http://react-quote.vercel.app/",
    src : require('../images/portofolio/aniquote.png').default,
    alt : "aniquote",
-   tag : ['react','bootstrap'],
-   info : "ANIQUOTE is random anime quote generator, You can get motivational quote for better live (maybe)"
+   tag : ['react','bootstrap', 'API'],
+   info : "ANIQUOTE is random anime quote generator, You can get motivational quote from anime character"
 },
 {
    id : 1,

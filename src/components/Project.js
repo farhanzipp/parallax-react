@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
+import { Link } from 'gatsby'
 import "../styles/project.css";
 import "nes.css/css/nes.min.css";
 import {
@@ -75,7 +76,7 @@ const ProjectCarousel = () => {
           </div>
         </div>
         <div className="more-projects">
-          <a className="nes-btn is-primary">More Projects</a>
+          <Link to='/projects' className="nes-btn is-primary">More Projects</Link>
         </div>  
       </div>
   );

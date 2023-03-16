@@ -25,4 +25,17 @@ html {
     font-family: 'VT323', monospace;
     color: white;
 }
-
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 2.5rem;
+    }
+    .container {
+        padding: 0 5%;
+    }
+}

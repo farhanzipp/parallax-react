@@ -16,3 +16,12 @@
     gap: 1rem;
     font-size: 2.5rem;
 }
+
+.social-btn {
+    color: #333;
+}
+
+.social-btn:hover {
+    color: black;
+    transition: 0.5ms;
+}

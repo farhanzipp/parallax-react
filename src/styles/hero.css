@@ -1,6 +1,5 @@
 .divider-soil {
     position: absolute;
-    text-align: center;
     bottom: 0px;
     height: 32%;
     width: 100%;
@@ -12,9 +11,7 @@
 .logo {
     top: -5rem !important;
 }
-@media (min-width: 768px) {
-    
-}
+
 @media (min-width: 1024px) {
     .layerImg {
         background-size: 100% !important;
@@ -22,4 +19,13 @@
     .logo {
         background-size: 45vh !important;
     }  
+    .divider-soil {
+        height: 36%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .divider-soil {
+        height: 26%;
+    }
 }
