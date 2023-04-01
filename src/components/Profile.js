@@ -10,34 +10,38 @@ const Profile = () => {
   return (
     <div className='profile-container' id='myProfile'>
         <div className='divider'></div>
-        <h1>ABOUT ME</h1>
-        <div className='profile-card nes-container is-dark is-rounded'>
-            <div className='profile-img nes-container is-dark'></div>
+        <h1 className='section-title'>ABOUT ME</h1>
+        <div className='profile-card nes-container is-rounded is-dark'>
+            <div className='profile-img nes-container is-dark'>
+                <h1>Halo</h1>
+            </div>
             <div className='profile-description'>
                 <h2>PROFILE</h2>
                 <ul>
-                        <li>
-                            <p>Name:</p>
-                            <p>Farhan Aji Pratama</p>
-                        </li>
-                        <li>
-                            <p>Role:</p>
-                            <p> Front End Dev, Designer</p>
-                        </li>
-                        <li>
-                            <p>Flag:</p> 
-                            <span id='indo' title='INDONESIA'></span>
-                        </li>
-                        <li>
-                            <p>Desc:</p>
-                            <p>Farhan is person, Who passionate in design and web development, 
-                                sometimes gardening sometimes cooking.
-                            </p>
-                        </li>    
+                    <li>
+                        <p>Name:</p>
+                        <p>Farhan Aji Pratama</p>
+                    </li>
+                    <li>
+                        <p>Role:</p>
+                        <p> Front End Dev, Designer</p>
+                    </li>
+                    <li>
+                        <p>Flag:</p> 
+                        <span id='indo' title='INDONESIA'></span>
+                    </li>
+                    <li>
+                        <p>Desc:</p>
+                        <p>Farhan is person, Who passionate in design and web development, 
+                            sometimes gardening sometimes cooking.
+                        </p>
+                    </li>    
                 </ul>    
             </div>   
         </div>
-        <div className='about-description nes-container is-dark is-rounded'>
+
+        {/* hanya muncul pada saat ukuran md */}
+        <div className='about-md nes-container is-rounded is-dark'>
             <div className='about-icons'>
                 <FaCode />
                 <GiCookingPot />
@@ -48,27 +52,31 @@ const Profile = () => {
                and Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquid suscipit?  
             </p>
         </div>
+
         <div className='info-wrapper'>
-        <div className='skill nes-container is-dark is-rounded'>
-            <h2>TECH I USE</h2>
-            <div className='skill-boxes'>
-                <FaHtml5 />
-                <FaCss3Alt />
-                <DiJavascript1 />
-                <FaBootstrap />
-                <FaReact />
-                <GrGatsbyjs />
+            <div className='skill nes-container is-rounded is-dark'>
+                <h2>TECH I USE</h2>
+                <div className='skill-boxes'>
+                    <FaHtml5 />
+                    <FaCss3Alt />
+                    <DiJavascript1 />
+                    <FaBootstrap />
+                    <FaReact />
+                    <GrGatsbyjs />
+                </div>
             </div>
-        </div>
-        <div className='cv-button'>
-            <button  type='button' className='nes-btn is-primary '>Download my CV</button>
-        </div>
-        <div className='cv nes-container is-dark is-rounded'>
-            <h2>MY CV</h2>
-            <div className='skill-cv'>
-                <button  type='button' className='nes-btn is-primary'>Download my CV</button>
+
+            <div className='cv-button'>
+                <button  type='button' className='nes-btn is-primary'> Download my CV</button>
             </div>
-        </div>
+
+            {/* hanya muncul pada saat ukuran md */}
+            <div className='cv-lg nes-container is-dark is-rounded'>
+                <h2>MY CV</h2>
+                <div className='skill-cv'>
+                    <button  type='button' className='cv-btn-md nes-btn is-primary'>Download my CV</button>
+                </div>
+            </div>
         </div>
     </div>
   )

@@ -13,28 +13,17 @@
     position: static;
     box-shadow: 0 .2em #212529,0 -.2em #212529,.2em 0 #212529,-.2em 0 #212529;
 }
+
 .project-container {
     width: 100%;
-    min-height: 100vh;
     background-color: pink;
     font-family: 'VT323', monospace; 
     padding: 0.5rem;
     padding-top: 2.5rem;
 }
 
-.project-container > h1 {
-    color: black;
-    margin: 0px;
-}
-
-.project-container > h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
 .project-card {
     background-color: #1C050F;
-    height: 100%;
 }
 
 .project-title {
@@ -43,10 +32,6 @@
     text-align: center;
     background-color: #fff;
     margin-bottom: 0.5rem;
-}
-
-.project-slider {
-    padding: 0px;
 }
 
 .project-carousel > img {
@@ -59,6 +44,7 @@
     justify-content: center;
     margin: 5px 0;
 }
+
 .dot {
     width: 0.7rem;
     height: 0.7rem;
@@ -66,8 +52,13 @@
     border: none;
     margin: 5px;
 }
+
 .carousel__dot--selected{
     background-color: pink;
+}
+
+.project-slider {
+    padding: 0;
 }
 
 .slide-wrapper  {
@@ -77,23 +68,26 @@
     align-items: center;
     margin: 5px 0;
 }
+
 .btn-slide {
-    width: 0;
-	height: 0;
-	border-top: 25px solid transparent;
-	border-bottom: 25px solid transparent;
-    cursor: pointer;
-    transition: 0.3ms;
+    font-size: 3.5rem;
+    color: gold;
+    border-color: transparent;
     background-color: transparent;
 }
-.left {
-    border-right: 35px solid gold;
-    border-left: 0px;
+
+.btn-slide-md {
+    display: none;
 }
-.right {
-    border-left: 30px solid gold;
-    border-right: 0px;
+
+.btn-slide:hover {
+    color: white;
 }
+
+.p-md {
+    display: none;
+}
+
 .btn-visit {
     display: flex;
     align-items: center;
@@ -109,10 +103,10 @@
     flex-direction: column;
     justify-content: space-between;
     transition: 0.5ms;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0.5rem;
     margin-top: 10px;
-    min-height: 25vh;
+    min-height: 20vh;
     width: 100%;
     text-align: center;
     background-color: #fff;
@@ -122,12 +116,16 @@
     display: flex;
 }
 
+.tag-wrapper-md {
+    display: none;
+}
+
 .tag-item {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', sans-serif;
     font-size: 1rem;
     padding: 3px 5px;
     color: white;
-    background-color: #333;
+    background-color: green;
     border-radius: 5px;
 }
 
@@ -137,4 +135,106 @@
     color: #fff;
     width: 100%;
     padding: 1rem;
+}
+
+.desc-md {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 3rem;
+    }
+
+    .project-container {
+        padding: 0 7% 2rem 7%;
+    }
+
+    .project-container > h3 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        width: 50%;
+    }
+
+    .project-description {
+        display: none;
+    }
+
+    .desc-md {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .desc-md > h2 {
+        font-size: 2rem;
+    }
+
+    .desc-md > p {
+        width: 80%;
+        font-size: 2rem;
+        text-align: center;
+        align-self: center;
+        justify-self: flex-end;
+    }
+
+    .item-md {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .wrapper-md {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 1rem;
+    }
+    
+    .btn-slide {
+        display: none;
+    }
+
+    .btn-slide-md {
+        display: unset;
+        position: absolute;
+        font-size: 3rem;
+        z-index: 99;
+        top: 45%;
+        background-color: transparent;
+        border: none;
+        color: #333;
+        opacity: 0.5;
+        margin: 0 5px;
+    }
+
+    .btn-slide-md:hover {
+        opacity: .8;
+    }
+
+    .slide-right {
+        right: 0px;
+    }
+
+    .p-md {
+        display: unset;
+        margin-top: 7px;
+    }
+
+    .btn-visit {
+        width: 100%;
+        gap: .5rem
+    }
+
+    .more-projects {
+       font-size: 1.5rem;
+    }
+
+    .tag-wrapper-md {
+        display: unset;
+        font-size: 1.5rem;
+        height: 30%;
+    }
 }

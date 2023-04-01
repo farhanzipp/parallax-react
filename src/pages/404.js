@@ -1,9 +1,15 @@
 import React from 'react'
-
+import Layout from '../components/Layout'
 
 const NotFound = () => {
   return (
-   <h1>404</h1>
+    <Layout>
+      <div className='page-body'>
+        <div className='page-container'>
+          <h1 className='page-header'>404 :o</h1>
+        </div>
+        </div>
+    </Layout>
   )
 }
 

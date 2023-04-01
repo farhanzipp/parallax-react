@@ -1,10 +1,6 @@
-h1 {
-    font-size: 3rem;
-    color: #fff;
-    margin: 1rem;
-}
-
-h2 {
+ .profile-description > h2,
+ .skill > h2,
+ .cv-lg > h2 {
     font-size: 2rem;
     color: gold;
     border-bottom: 3px solid gold;
@@ -12,7 +8,7 @@ h2 {
 }
 
 ul {
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 li {
@@ -22,13 +18,8 @@ li {
     font-size: 1.7rem;
 }
 
-.nes-container.is-dark {
-    background-color: #1C050F;
-    position:static;
-}
-
-.nes-container.is-dark.with-title > .title {
-    background-color: #1C050F;
+.divider {
+    height: 90vh;
 }
 
 .profile-container {
@@ -37,12 +28,18 @@ li {
     font-family: 'VT323', monospace;
     background-color: #1C050F;
 }
-.divider {
-    height: 90vh;
+
+.nes-container.is-dark {
+    background-color: #1C050F;
+    position:static;
+}
+
+.profile-container > .section-title {
+    color: white;
 }
 
 .profile-img {
-    min-height: 300px;
+    min-height: 250px;
     background-image: url(../images/mine.png);
     background-repeat: no-repeat;
     background-size: 50%;
@@ -56,8 +53,12 @@ li {
     margin-top: 10px;
 }
 
-.about-description {
+.about-md {
     display: none;
+}
+
+.about-md > p {
+    font-size: 1.5rem;
 }
 
 .skill-boxes {
@@ -67,7 +68,7 @@ li {
     justify-content: center;
 }
 
-.cv {
+.cv-lg {
     display: none;
 }
 
@@ -76,11 +77,12 @@ li {
     justify-content: center;
     padding: 1rem;
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 768px) {
     h2 {
         margin-bottom: 0;
-
     }
+
     ul {
         padding: 0;
     }
@@ -88,26 +90,28 @@ li {
     li:last-child{
         display: none;
     }
-    .profile-container {
-        padding: 0 7% 2rem 7%;
-    }
+
     .profile-card {
         display: flex;
         justify-content: space-around;
-        padding: 2rem !important;
+        padding: 2rem 0 !important;
     }
+
     .profile-img {
         width: 30%;
         min-height: 70px;
         background-size: 85%;
     }
+
     #indo {
-        margin-top: 1.4rem;
+        margin-top: 0.7rem;
     }
-    .about-description {
+
+    .about-md {
         display: block;
         text-align: center;
     }
+
     .about-icons{
         display: flex;
         gap: 2rem;
@@ -115,41 +119,58 @@ li {
         color: azure;
         font-size: 3rem;
     }
+
     .skill-boxes {
         padding: 1rem;
         font-size: 3.5rem;
         gap: 1rem;
     }
-    .skill, .cv {
+
+    .skill, .cv-lg {
         text-align: center;
     }
-    .cv-button {
-        font-size: 2.5rem;
+
+    .cv-button,
+    .cv-btn-md {
+        font-size: 1.5rem;
     }
-    
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .profile-card {
-        justify-content: start;
+        justify-content: center;
         gap: 3rem;
     }
+
     .profile-img {
         width: 30%;
         min-height: 70px;
-        background-size: 75%;
+        background-size: 55%;
     }
+
     .info-wrapper {
         display: flex;
     }
-    .skill, .cv {
+
+    .skill, .cv-lg {
         width: 50%;
     }
-    .cv {
+
+    .skill-boxes {
+        font-size: 3rem;
+    }
+    .cv-lg {
         display: block;
         font-size: 2rem;
     }
+    
     .cv-button {
         display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about-md > p {
+        padding: 0 3rem;
     }
 }

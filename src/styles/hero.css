@@ -1,3 +1,11 @@
+div::-webkit-scrollbar {
+    display: none;
+}
+
+div {
+    scrollbar-width: none; 
+}
+
 .divider-soil {
     position: absolute;
     bottom: 0px;
@@ -5,27 +13,37 @@
     width: 100%;
     background-color: #1C050F;
 }
+
 .layerImg {
     background-size: 250% !important;
 }
+
 .logo {
     top: -5rem !important;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .layerImg {
         background-size: 100% !important;
     }
+
     .logo {
         background-size: 45vh !important;
     }  
+    
     .divider-soil {
-        height: 36%;
+        height: 3%;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .divider-soil {
-        height: 26%;
+        height: 37%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .divider-soil {
+        height: 24%;
     }
 }

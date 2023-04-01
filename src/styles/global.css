@@ -1,41 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=VT323&display=swap');
 
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar {
-    display: none;
-}
+
 body {
     scroll-behavior: smooth;
 }
 
 html {
-    cursor: pointer;
+    cursor: unset;
 }
 
- .navbar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    z-index: 5;
-    font-family: 'VT323', monospace;
-    color: white;
+.section-title{
+    text-align: center;
+    font-size: 3rem;
 }
-@media (min-width: 1024px) {
-    h1 {
-        font-size: 5rem;
-    }
-    h2 {
+
+.sub-section-title {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.nes-container.is-rounded.is-dark,
+.nes-container.is-rounded,
+.nes-balloon,
+.nes-btn{
+    border-image-repeat: unset;
+}
+
+@media (min-width: 768px) {
+    .section-title {
         font-size: 3.5rem;
     }
-    p {
-        font-size: 2.5rem;
+    .profile-container,
+    .project-container,
+    .contact-container {
+        padding: 0 7% 2rem 7%;
     }
-    .container {
-        padding: 0 5%;
+}
+
+@media (min-width: 1280px) {
+    .section-title {
+        font-size: 3.5rem;
+    }
+    .profile-container,
+    .project-container,
+    .contact-container {
+        padding: 0 15% 2rem 15%;
     }
 }

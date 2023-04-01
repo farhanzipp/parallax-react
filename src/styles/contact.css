@@ -1,12 +1,24 @@
 .contact-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: #fff;
     font-family: 'VT323', monospace; 
     padding: 3rem 1rem;
+    color: black;
+}
+
+.contact-container > h1 {
+    color: black;
+    margin: 0;
+}
+
+.balloon-text {
     text-align: center;
 }
+
 .contact-header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: black;
 }
 
@@ -24,4 +36,30 @@
 .social-btn:hover {
     color: black;
     transition: 0.5ms;
+}
+
+@media (min-width: 1024px) {
+    .contact-container {
+        padding: 0 7% 2rem 7%;
+        min-height: 60vh;
+    }
+
+    .contact-container > h1 {
+        margin: 4rem 0;
+    }
+
+    .balloon-text {
+        width: 60%;
+        align-self: center;
+    }
+
+    .contact-header {
+        font-size: 3.5rem;
+        color: black;
+    }
+    
+    .social-wrapper {
+        gap: 1rem;
+        font-size: 4rem;
+    }
 }
