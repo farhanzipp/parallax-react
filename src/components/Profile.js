@@ -6,6 +6,7 @@ import { DiJavascript1 } from 'react-icons/di'
 import { GrGatsbyjs } from 'react-icons/gr'
 import { GiCookingPot, GiGamepad } from 'react-icons/gi'
 import { TbShovel } from 'react-icons/tb'
+
 const Profile = () => {
   return (
     <div className='profile-container' id='myProfile'>
@@ -33,7 +34,7 @@ const Profile = () => {
                     <li>
                         <p>Desc:</p>
                         <p>Farhan is person, Who passionate in design and web development, 
-                            sometimes gardening sometimes cooking.
+                        sometimes gardening sometimes cooking.
                         </p>
                     </li>    
                 </ul>    
