@@ -34,6 +34,10 @@ li {
     position:static;
 }
 
+.nes-container.is-dark::after{
+    right: unset;
+}
+
 .profile-container > .section-title {
     color: white;
 }
