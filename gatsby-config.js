@@ -12,5 +12,14 @@ module.exports = {
     title: `Farhan's Personal Website`,
     description: 'This is my awesome blog I made from scratch!'  
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-source-blogger',
+      options: {
+          apiKey: 'AIzaSyBxIvXPj6cbkqMXTK0gDV9MSS5VdgVKoO4',
+          blogId: '1626104544365850862',
+          downloadImage: true
+        }
+    }
+  ],
 }

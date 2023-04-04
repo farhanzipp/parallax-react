@@ -32,18 +32,18 @@ div {
     }  
     
     .divider-soil {
-        height: 3%;
+        height: 27rem;
     }
 }
 
 @media (min-width: 1024px) {
     .divider-soil {
-        height: 37%;
+        height: 31%;
     }
 }
 
 @media (min-width: 1280px) {
     .divider-soil {
-        height: 24%;
+        height: 21rem;
     }
 }

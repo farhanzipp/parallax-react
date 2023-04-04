@@ -72,16 +72,22 @@
 .btn-slide {
     font-size: 3.5rem;
     color: gold;
-    border-color: transparent;
+    border: none;
     background-color: transparent;
-}
-
-.btn-slide-md {
-    display: none;
 }
 
 .btn-slide:hover {
     color: white;
+    
+}
+
+.btn-slide:focus,
+.btn-slide-md:focus {
+    outline: none;
+}
+
+.btn-slide-md {
+    display: none;
 }
 
 .p-md {
